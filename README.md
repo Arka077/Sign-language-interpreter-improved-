@@ -1,13 +1,13 @@
 # 👋 Sign Language Interpreter - Real-Time Gesture Recognition
 
-A powerful real-time sign language recognition system combining Convolutional Neural Networks (CNN) with MediaPipe hand tracking technology, achieving an impressive **99.6% validation accuracy**. This system enables seamless communication by translating sign language gestures into text in real-time.
+A powerful real-time sign language recognition system combining Convolutional Neural Networks (CNN) with MediaPipe hand tracking technology, achieving an impressive **99.6%+ validation accuracy** (reaching 100% at peak performance). This system enables seamless communication by translating sign language gestures into text in real-time.
 
 ## 🎯 Overview
 
 This project implements a sophisticated sign language interpreter that uses computer vision and deep learning to recognize hand gestures in real-time. The system captures video input through a webcam, processes hand landmarks using MediaPipe's 21-point hand tracking, and classifies gestures using a trained CNN model. With real-time processing at 30+ FPS and a user-friendly Streamlit web interface, it provides an accessible solution for sign language interpretation.
 
 **Key Highlights:**
-- 🎯 **99.6% Validation Accuracy** on custom dataset
+- 🎯 **99.6%+ Validation Accuracy** on custom dataset (100% at peak)
 - ⚡ **30+ FPS** real-time processing
 - 🤖 **Deep CNN Architecture** with 3 convolutional blocks
 - 🖐️ **MediaPipe Integration** for precise hand landmark detection
@@ -29,7 +29,7 @@ This project implements a sophisticated sign language interpreter that uses comp
 - Support for single-hand gesture recognition
 
 ### High Accuracy Model
-- 99.6% validation accuracy achieved at epoch 36
+- 99.6%+ validation accuracy (100% at peak performance)
 - Confidence filtering (>70%) to reduce false positives
 - Trained on 5,003+ custom-collected images
 - Grayscale processing for computational efficiency
@@ -397,8 +397,10 @@ Contributions are welcome! Here's how you can help improve this project:
 
 ### Contribution Guidelines
 1. **Fork the Repository**
+   - Click the "Fork" button on the GitHub repository page
+   - Clone your fork locally:
    ```bash
-   git fork https://github.com/Arka077/Sign-language-interpreter-improved-.git
+   git clone https://github.com/YOUR_USERNAME/Sign-language-interpreter-improved-.git
    ```
 
 2. **Create a Feature Branch**
