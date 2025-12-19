@@ -146,7 +146,7 @@ Flatten
 └── Dense(10, Softmax)  # 10 gesture classes
 ```
 
-**Total Parameters**: ~millions (optimized for accuracy and speed)
+**Optimizer**: Adam optimizer with categorical crossentropy loss
 
 ## 📊 Training Details
 
@@ -162,17 +162,19 @@ Flatten
 - **Optimizer**: Adam
 - **Loss Function**: Categorical Crossentropy
 - **Batch Size**: 128
+- **Max Epochs**: 100
 - **Early Stopping**: 
   - Patience: 20 epochs
   - Monitor: validation loss
   - Min delta: 0.00001
-- **Best Epoch**: 36 (out of 56 total)
+- **Best Epoch**: 36
+- **Actual Epochs Trained**: 56 (stopped early)
 
 ### Performance Metrics
-- **Validation Accuracy**: 99.6% (epoch 36)
-- **Training Accuracy**: 99.6%
-- **Best Validation Loss**: 3.5542e-07
-- **Training stopped at**: Epoch 56 (restored best weights from epoch 36)
+- **Validation Accuracy**: 100% (epoch 36)
+- **Training Accuracy**: 99.6% (epoch 36)
+- **Best Validation Loss**: 3.5542e-07 (epoch 36)
+- **Training Result**: Stopped at epoch 56 after 20 epochs without improvement; best weights from epoch 36 restored
 
 ## 🔍 Preprocessing Pipeline
 
@@ -283,7 +285,7 @@ Main libraries required:
 streamlit>=1.28.0          # Web interface
 opencv-python>=4.8.0       # Image processing
 mediapipe>=0.10.0          # Hand tracking
-tensorflow>=2.14.0         # Deep learning framework (includes Keras)
+tensorflow>=2.14.0         # Deep learning framework (includes Keras as tf.keras)
 numpy>=1.24.0              # Numerical operations
 pillow>=10.0.0             # Image handling
 ```
