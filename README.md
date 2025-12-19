@@ -283,15 +283,14 @@ Main libraries required:
 streamlit>=1.28.0          # Web interface
 opencv-python>=4.8.0       # Image processing
 mediapipe>=0.10.0          # Hand tracking
-tensorflow>=2.14.0         # Deep learning framework
+tensorflow>=2.14.0         # Deep learning framework (includes Keras)
 numpy>=1.24.0              # Numerical operations
 pillow>=10.0.0             # Image handling
-keras>=2.14.0              # High-level neural networks API
 ```
 
 Install all dependencies:
 ```bash
-pip install streamlit opencv-python mediapipe tensorflow numpy pillow keras
+pip install streamlit opencv-python mediapipe tensorflow numpy pillow
 ```
 
 ## 🔧 Configuration
